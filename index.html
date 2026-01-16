@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Свадьба Никиты и Иры</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #faf7f5;
+      color: #333;
+      text-align: center;
+    }
+    .container {
+      max-width: 640px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+    .date {
+      font-size: 20px;
+      margin: 20px 0;
+      letter-spacing: 1px;
+    }
+    .block {
+      margin: 40px 0;
+    }
+    .heart {
+      font-size: 28px;
+      margin: 20px 0;
+    }
+    form {
+      text-align: left;
+      margin-top: 30px;
+    }
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: 400;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      font-family: 'Montserrat', sans-serif;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    textarea {
+      resize: vertical;
+    }
+    button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 14px;
+      background: #333;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #555;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 14px;
+      color: #777;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Никита & Ира</h1>
+    <h2>Мы женимся</h2>
+
+    <div class="heart">🤍</div>
+
+    <p>
+      Дорогие родные и друзья,<br>
+      мы будем счастливы разделить с вами<br>
+      один из самых важных дней нашей жизни
+    </p>
+
+    <div class="block">
+      <div class="date">6 марта 2026</div>
+      <p>Москва</p>
+    </div>
+
+    <div class="block">
+      <h3>Подтвердите, пожалуйста, своё присутствие</h3>
+
+      <!-- 🔴 ВСТАВЬ СЮДА СВОЙ FORMSPREE URL -->
+      <form action="https://formspree.io/f/xxxxabcd" method="POST">
+
+        <label>Ваше имя и фамилия</label>
+        <input type="text" name="name" required>
+
+        <label>Сможете ли вы присутствовать?</label>
+        <select name="attendance" required>
+          <option value="">Выберите вариант</option>
+          <option>Да, с удовольствием!</option>
+          <option>Скорее всего да</option>
+          <option>К сожалению, не смогу</option>
+        </select>
+
+        <label>Аллергии или пищевые ограничения</label>
+        <textarea name="food" placeholder="Например: аллергия на орехи, без глютена, вегетарианец"></textarea>
+
+        <label>Предпочтения по напиткам</label>
+        <select name="alcohol">
+          <option value="">Можно выбрать один вариант</option>
+          <option>Шампанское</option>
+          <option>Вино (белое / красное)</option>
+          <option>Пиво</option>
+          <option>Крепкий алкоголь</option>
+          <option>Безалкогольные напитки</option>
+        </select>
+
+        <label>Комментарий (по желанию)</label>
+        <textarea name="comment"></textarea>
+
+        <button type="submit">Отправить ответ</button>
+      </form>
+    </div>
+
+    <footer>
+      С любовью,<br>
+      Никита и Ира
+    </footer>
+  </div>
+</body>
+</html>
